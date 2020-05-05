@@ -35,14 +35,14 @@ class PopupMenu implements MouseListener {
     }
     @Override
     public void mousePressed(MouseEvent m){
-        frame.firstTask.setForeground(Color.red);
-        frame.secondTask.setForeground(Color.cyan);
-        frame.thirdTask.setForeground(Color.yellow);
+//        frame.firstTask.setForeground(Color.red);
+//        frame.secondTask.setForeground(Color.cyan);
+//        frame.thirdTask.setForeground(Color.yellow);
     }
     @Override
     public void mouseReleased(MouseEvent m){
-        frame.firstTask.setForeground(Color.black);
-        frame.secondTask.setForeground(Color.black);
-        frame.thirdTask.setForeground(Color.black);
+//        frame.firstTask.setForeground(Color.black);
+//        frame.secondTask.setForeground(Color.black);
+//        frame.thirdTask.setForeground(Color.black);
     }
 }

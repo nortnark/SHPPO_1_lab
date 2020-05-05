@@ -17,7 +17,7 @@ class Task {
         JOptionPane.showMessageDialog(null, "Задача изменена.");
     }
     void deleteTheTask() {
-        task = "";
-        JOptionPane.showMessageDialog(null, "Задача удалена.");
+        JOptionPane.showMessageDialog(null, "Задача "+ task + " удалена.");
+        task = null;
     }
 }

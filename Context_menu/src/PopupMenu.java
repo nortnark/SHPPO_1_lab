@@ -1,48 +1,42 @@
-import javafx.scene.input.MouseButton;
 
 import javax.swing.*;
-import java.awt.*;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-class PopupMenu implements MouseListener {
-    static Frame frame;
-    static JPopupMenu popupMenu;
+class PopupMenu {
+    static JPopupMenu popupMenuTask;
+    static JPopupMenu popupMenuFrame;
+    static Task task;
+    JLabel labelTry = new JLabel();
+    // Элементы меню
+    JMenuItem menuNewOne = new JMenuItem("Добавить задачу");
+    JMenuItem menuEditOne = new JMenuItem("Изменить");
+    JMenuItem menuDeleteOne = new JMenuItem("Удалить");
+
     public PopupMenu(){
-        frame = new Frame();
-        popupMenu = new JPopupMenu();
-        //addItemListener
-        frame.firstTask.addMouseListener(this);
-        frame.secondTask.addMouseListener(this);
-        frame.thirdTask.addMouseListener(this);
-        // Элементы меню
-        JMenuItem menuNewOne = new JMenuItem("Добавить задачу");
-        JMenuItem menuEditOne = new JMenuItem("Изменить");
-        JMenuItem menuDeleteOne = new JMenuItem("Удалить");
-        JMenuItem menuDeleteAll = new JMenuItem("Удалить все");
+        task = new Task();
+        popupMenuTask = new JPopupMenu();
+        popupMenuFrame = new JPopupMenu();
+
+
+//        JMenuItem menuDeleteAll = new JMenuItem("Удалить все");
+
+        popupMenuTask.add(menuEditOne);
+        popupMenuTask.add(menuDeleteOne);
+        popupMenuFrame.add(menuNewOne);
+
 
     }
-    @Override
-    public void mouseEntered(MouseEvent m) {
-
+    // Вывод контекстного меню для задачи
+    public void showTaskMenu(Frame frame, int x, int y) {
+        popupMenuTask.show(frame, x, y);
     }
-    @Override
-    public void mouseExited(MouseEvent m) {
-
+    // Вывод контекстного меню для пустого поля
+    public void showFrameMenu(Frame frame, int x, int y){
+        popupMenuFrame.show(frame,x,y);
     }
-    @Override
-    public void mouseClicked(MouseEvent m){
-    }
-    @Override
-    public void mousePressed(MouseEvent m){
-        frame.firstTask.setForeground(Color.red);
-        frame.secondTask.setForeground(Color.cyan);
-        frame.thirdTask.setForeground(Color.yellow);
-    }
-    @Override
-    public void mouseReleased(MouseEvent m){
-        frame.firstTask.setForeground(Color.black);
-        frame.secondTask.setForeground(Color.black);
-        frame.thirdTask.setForeground(Color.black);
+    public Task menuNewTask() {
+        task.makeNewTask();
+        return task;
     }
 }

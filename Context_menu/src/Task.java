@@ -1,7 +1,7 @@
 import javax.swing.*;
 
 class Task {
-    private String task;
+    private String task = null;
 
     public String getTask() {
         return task;
@@ -9,7 +9,9 @@ class Task {
 
     void makeNewTask() {
         task = JOptionPane.showInputDialog("Новая задача: ");
-        JOptionPane.showMessageDialog(null, "Задача добавлена.");
+        if (task != null) {
+            JOptionPane.showMessageDialog(null, "Задача добавлена.");
+        }
     }
     void editTheTask() {
         String message = "Изменить задачу '" + task + "': ";
@@ -18,6 +20,6 @@ class Task {
     }
     void deleteTheTask() {
         JOptionPane.showMessageDialog(null, "Задача "+ task + " удалена.");
-        task = null;
+        task = "";
     }
 }

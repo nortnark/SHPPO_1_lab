@@ -4,12 +4,13 @@
     <list default="true" id="9e43ce77-be50-4495-9bfc-f3d38d8ae43f" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FrameInteract.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/PopCheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PopupMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FrameCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FrameCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FrameInteract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FrameInteract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PopupMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PopupMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +48,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.PopCheck">
+  <component name="RunManager" selected="Application.FrameCheck">
     <configuration name="FrameCheck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FrameCheck" />
       <module name="Context_menu" />
@@ -71,8 +72,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PopCheck" />
         <item itemvalue="Application.FrameCheck" />
+        <item itemvalue="Application.PopCheck" />
         <item itemvalue="Application.TaskCheck" />
       </list>
     </recent_temporary>
@@ -95,22 +96,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="779" y="51" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1588672323489" />
-    <state width="595" height="163" key="GridCell.Tab.0.bottom" timestamp="1588681925906">
+    <state width="595" height="163" key="GridCell.Tab.0.bottom" timestamp="1588705515720">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="595" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588681925906" />
-    <state width="595" height="163" key="GridCell.Tab.0.center" timestamp="1588681925906">
+    <state width="595" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588705515720" />
+    <state width="595" height="163" key="GridCell.Tab.0.center" timestamp="1588705515720">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="595" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1588681925906" />
-    <state width="595" height="163" key="GridCell.Tab.0.left" timestamp="1588681925906">
+    <state width="595" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1588705515720" />
+    <state width="595" height="163" key="GridCell.Tab.0.left" timestamp="1588705515720">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="595" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1588681925906" />
-    <state width="595" height="163" key="GridCell.Tab.0.right" timestamp="1588681925906">
+    <state width="595" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1588705515720" />
+    <state width="595" height="163" key="GridCell.Tab.0.right" timestamp="1588705515720">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="595" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1588681925906" />
+    <state width="595" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1588705515720" />
     <state width="570" height="204" key="GridCell.Tab.1.bottom" timestamp="1588674863019">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

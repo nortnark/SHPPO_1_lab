@@ -16,14 +16,22 @@ class Frame extends JFrame{
     public Frame() {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setTitle("Демонстрация контекстного меню");
-        setLayout(new GridLayout(3,2,10,10));
+        setLayout(new GridLayout(3,2));
         Font font = new Font("Serif", Font.PLAIN, 25);
-        num1.setFont(font); firstTask.setFont(font);
-        num2.setFont(font); secondTask.setFont(font);
-        num3.setFont(font); thirdTask.setFont(font);
-        add(num1);  add(firstTask);
-        add(num2);  add(secondTask);
-        add(num3);  add(thirdTask);
+        num1.setFont(font);
+        firstTask.setFont(font);
+        num2.setFont(font);
+        secondTask.setFont(font);
+        num3.setFont(font);
+        thirdTask.setFont(font);
+
+        add(num1);
+        add(firstTask,"wrap");
+        add(num2);
+        add(secondTask);
+        add(num3);
+        add(thirdTask);
+
         pack();
         setSize(600,300);
         setLocation(650,365);

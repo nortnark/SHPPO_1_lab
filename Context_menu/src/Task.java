@@ -2,7 +2,7 @@ import javax.swing.*;
 
 class Task {
     // Объявление используемой переменной
-    private String task = null;
+    private String task = "";
 
     // Геттер для вывода значения приватной переменной
     public String getTask() {
@@ -10,16 +10,22 @@ class Task {
     }
     //Метод класса Task для создания новой задачи
     void makeNewTask() {
-        task = JOptionPane.showInputDialog("Новая задача: ");
-        if (task != null) {
+        String check;
+        check = JOptionPane.showInputDialog("Новая задача: ");
+        if (check != null) {
             JOptionPane.showMessageDialog(null, "Задача добавлена.");
+            task = check;
         }
     }
     //Метод класса Task для изменения существующей задачи
     void editTheTask() {
+        String check;
         String message = "Изменить задачу '" + task + "': ";
-        task = JOptionPane.showInputDialog(message);
-        JOptionPane.showMessageDialog(null, "Задача изменена.");
+        check = JOptionPane.showInputDialog(message);
+        if (check != null && !check.equals(task)) {
+            JOptionPane.showMessageDialog(null, "Задача изменена.");
+            task = check;
+        }
     }
     //Метод класса Task для удаления задачи
     void deleteTheTask() {

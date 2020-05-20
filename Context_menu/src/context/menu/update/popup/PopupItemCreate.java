@@ -11,6 +11,7 @@ import java.awt.event.ActionListener;
 public class PopupItemCreate implements IPopupItem {
 
     static JMenuItem menuNewOne = new JMenuItem("Добавить задачу");
+    static JLabel label;
 
     @Override
     public JMenuItem addItem() {
@@ -19,7 +20,7 @@ public class PopupItemCreate implements IPopupItem {
         menuNewOne.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JLabel label = Frame.getInstance().taskList.get(Task.index);
+                label = Frame.getInstance().taskList.get(Task.index);
                 String text = Task.makeNewTask();
                 label.setText(text);
             }

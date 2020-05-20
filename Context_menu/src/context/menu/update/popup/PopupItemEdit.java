@@ -10,6 +10,7 @@ import java.awt.event.ActionListener;
 public class PopupItemEdit implements IPopupItem {
 
     static JMenuItem menuEditOne = new JMenuItem("Изменить задачу");
+    static JLabel label;
 
     @Override
     public JMenuItem addItem() {
@@ -21,7 +22,7 @@ public class PopupItemEdit implements IPopupItem {
             public void actionPerformed(ActionEvent e) {
                 // По индексу запрашивает метку, на которой было произведено нажатие,
                 // вызывает метод класса PopupMenu и присваивает новое значение метке
-                JLabel label = Frame.getInstance().taskList.get(Task.index);
+                label = Frame.getInstance().taskList.get(Task.index);
                 String text = Task.editTheTask();
                 label.setText(text);
             }

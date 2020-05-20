@@ -20,18 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e43ce77-be50-4495-9bfc-f3d38d8ae43f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/context/menu/update/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/menu/update/frame/Frame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/menu/update/popup/FramePopupMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/menu/update/popup/IPopupItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/menu/update/popup/Popup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/menu/update/popup/PopupBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/menu/update/popup/PopupItemCreate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/menu/update/popup/PopupItemDelete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/menu/update/popup/PopupItemEdit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/menu/update/popup/TaskPopupMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/menu/update/task/Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame.uml" beforeDir="false" afterPath="$PROJECT_DIR$/frame.uml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Context_menu/Frame.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Context_menu/FrameInteract$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Context_menu/FrameInteract$2.class" beforeDir="false" />
@@ -40,15 +30,17 @@
       <change beforePath="$PROJECT_DIR$/out/production/Context_menu/FrameInteract$5.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Context_menu/FrameInteract$6.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Context_menu/FrameInteract.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Context_menu/META-INF/Context_menu.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Context_menu/PopupMenu.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Context_menu/Start.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Context_menu/Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FrameInteract.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PopupMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Start.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/popup.uml" beforeDir="false" afterPath="$PROJECT_DIR$/popup.uml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/menu/update/popup/Popup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/menu/update/popup/Popup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/menu/update/popup/PopupBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/menu/update/popup/PopupBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/menu/update/popup/PopupItemDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/menu/update/popup/PopupItemDelete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/menu/update/popup/PopupItemEdit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/menu/update/popup/PopupItemEdit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/menu/update/popup/TaskPopupMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/menu/update/popup/TaskPopupMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/menu/update/task/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/menu/update/task/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.uml" beforeDir="false" afterPath="$PROJECT_DIR$/test.uml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +72,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
@@ -144,10 +138,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588509328095</updated>
+      <workItem from="1589999611507" duration="6519000" />
     </task>
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -155,38 +162,42 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="779" y="51" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1589925541496" />
-    <state width="1237" height="2" key="GridCell.Tab.0.bottom" timestamp="1589983384904">
+    <state x="421" y="67" key="FileChooserDialogImpl" timestamp="1589984226184">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589983384904" />
-    <state width="1237" height="2" key="GridCell.Tab.0.center" timestamp="1589983384904">
+    <state x="421" y="67" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1589984226184" />
+    <state width="1237" height="2" key="GridCell.Tab.0.bottom" timestamp="1590006306564">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1589983384904" />
-    <state width="1237" height="2" key="GridCell.Tab.0.left" timestamp="1589983384904">
+    <state width="1237" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590006306564" />
+    <state width="1237" height="2" key="GridCell.Tab.0.center" timestamp="1590006306564">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1589983384904" />
-    <state width="1237" height="2" key="GridCell.Tab.0.right" timestamp="1589983384904">
+    <state width="1237" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590006306564" />
+    <state width="1237" height="2" key="GridCell.Tab.0.left" timestamp="1590006306564">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1589983384904" />
-    <state width="1237" height="2" key="GridCell.Tab.1.bottom" timestamp="1589981994034">
+    <state width="1237" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590006306564" />
+    <state width="1237" height="2" key="GridCell.Tab.0.right" timestamp="1590006306564">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="2" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589981994034" />
-    <state width="1237" height="2" key="GridCell.Tab.1.center" timestamp="1589981994034">
+    <state width="1237" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590006306564" />
+    <state width="1237" height="2" key="GridCell.Tab.1.bottom" timestamp="1589984748581">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="2" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1589981994034" />
-    <state width="1237" height="2" key="GridCell.Tab.1.left" timestamp="1589981994034">
+    <state width="1237" height="2" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589984748581" />
+    <state width="1237" height="2" key="GridCell.Tab.1.center" timestamp="1589984748581">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="2" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1589981994034" />
-    <state width="1237" height="2" key="GridCell.Tab.1.right" timestamp="1589981994034">
+    <state width="1237" height="2" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1589984748581" />
+    <state width="1237" height="2" key="GridCell.Tab.1.left" timestamp="1589984748581">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="2" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1589981994034" />
+    <state width="1237" height="2" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1589984748581" />
+    <state width="1237" height="2" key="GridCell.Tab.1.right" timestamp="1589984748581">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="2" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1589984748581" />
     <state x="349" y="169" key="com.intellij.ide.util.TipDialog" timestamp="1588915843514">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

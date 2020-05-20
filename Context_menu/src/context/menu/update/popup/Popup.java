@@ -18,12 +18,12 @@ public class Popup {
         JMenuItem item = newItem.addItem();
         popupMenu.add(item);
     }
-    public void addDeleter() {
+    public void addCleaner() {
         newItem = new PopupItemDelete();
         JMenuItem item = newItem.addItem();
         popupMenu.add(item);
     }
     public void show(JFrame frame, int x, int y){
-        popupMenu.show(frame, x, y);
+        popupMenu.show(frame, x + 20, y + 120);
     }
 }

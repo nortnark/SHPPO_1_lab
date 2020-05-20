@@ -16,8 +16,6 @@ public class Task {
     //==================
     static JLabel task = new JLabel("");
     public static int index;
-    static PopupBuilder builderFrame = new FramePopupMenu();
-    static PopupBuilder builderTask =  new TaskPopupMenu();
     //==================
 
     //Метод класса Task для создания новой задачи
@@ -26,7 +24,7 @@ public class Task {
         check = JOptionPane.showInputDialog("Новая задача: ");
         if (check != null) {
             JOptionPane.showMessageDialog(null, "Задача добавлена.");
-            task.setText("     " + check);
+            task.setText(check);
         }
         return task.getText();
     }
@@ -39,8 +37,8 @@ public class Task {
         String message = "Изменить задачу '" + task.getText() + "': ";
         check = JOptionPane.showInputDialog(message);
         if (check != null && !check.equals(task.getText())) {
+            task.setText(check);
             JOptionPane.showMessageDialog(null, "Задача изменена.");
-            task.setText("     " + check);
         }
         return task.getText();
     }
@@ -49,8 +47,9 @@ public class Task {
 
     //Метод класса Task для удаления задачи
     public static String deleteTheTask() {
-        JOptionPane.showMessageDialog(null, "Задача "+ task.getText() + " удалена.");
+        String text = task.getText();
         task.setText("");
+        JOptionPane.showMessageDialog(null, "Задача "+ text + " удалена.");
         return task.getText();
     }
 
@@ -58,19 +57,20 @@ public class Task {
 
     // Геттер для вывода значения приватной переменной
     public static JLabel getTask() {
+        PopupBuilder builder;
+        Popup menu;
+        if (task.getText().equals("")) {
+            builder = new FramePopupMenu();
+        } else {
+            builder = new TaskPopupMenu();
+        }
+        menu = builder.buildPopup();
+
         task.addMouseListener(new MouseListener() {
             @Override
             public void mouseClicked(MouseEvent mouseEvent) { }
             @Override
             public void mousePressed(MouseEvent mouseEvent) {
-                Popup menu;
-                if (task.getText().equals("")) {
-                    menu = null;
-                    menu = builderFrame.buildPopup();
-                } else {
-                    menu = null;
-                    menu = builderTask.buildPopup();
-                }
 
                 menu.show(Frame.getInstance(), mouseEvent.getX(), mouseEvent.getY());
                 index = Frame.getInstance().taskList.indexOf(task);

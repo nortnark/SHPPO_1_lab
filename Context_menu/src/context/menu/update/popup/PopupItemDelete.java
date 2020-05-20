@@ -14,7 +14,7 @@ public class PopupItemDelete implements IPopupItem{
     @Override
     public JMenuItem addItem() {
         //         Обработа слушателя меню
-        //         Действия при нажатии 'Добавить задачу'
+        //         Действия при нажатии 'Удалить'
         menuDeleteOne.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

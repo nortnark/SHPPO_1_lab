@@ -16,7 +16,7 @@ public class PopupItemEdit implements IPopupItem {
     public JMenuItem addItem() {
 
         //         Обработа слушателя меню
-        //         Действия при нажатии 'Добавить задачу'
+        //         Действия при нажатии 'Изменить'
         menuEditOne.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

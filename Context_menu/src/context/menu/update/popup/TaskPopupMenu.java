@@ -9,7 +9,7 @@ public class TaskPopupMenu extends PopupBuilder{
     @Override
     public Popup buildPopup() {
         popupMenu.addEditor();
-        popupMenu.addDeleter();
+        popupMenu.addCleaner();
         return popupMenu;
     }
 }
